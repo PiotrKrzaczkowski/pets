@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../assets/Group\ 108.svg");
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  background-position: 35% 150%;
+  .header-items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 120px 20px 0 20px;
+    .header-title {
+      color: $font-color-light;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+    .header-desc {
+      width: 80%;
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: darken($font-color-light, 10%);
+    }
+    .header-btn {
+      @include blue-btn;
+      margin-top: 20px;
+    }
+  }
+  .header-dog {
+    display: block;
+    position: absolute;
+    bottom: -80px;
+    right: 20px;
+  }
+}

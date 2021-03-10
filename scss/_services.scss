@@ -1,0 +1,61 @@
+.services {
+  width: 100%;
+  min-height: 100vh;
+  padding: 150px 0px 0;
+  position: relative;
+
+  .fetch {
+    @include fetch;
+    width: 60%;
+    .fetch-title {
+      font-size: 1.8rem;
+    }
+    .fetch-desc {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: lighten($font-color-dark, 50%);
+    }
+    .fetch-subtitle {
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+    .fetch-inputs {
+      width: 100%;
+      margin-top: 20px;
+      position: relative;
+      .fetch-input {
+        @include fetch-input;
+      }
+      .fetch-btn {
+        @include fetch-btn;
+      }
+    }
+  }
+  .services-flex {
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .flex-item {
+      @include flex-item;
+      flex-img {
+        width: 45px;
+        height: 45px;
+      }
+      .flex-desc {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 0.8rem;
+        color: darken($font-color-light, 50%);
+      }
+    }
+  }
+  .service-img {
+    position: absolute;
+    top: 25%;
+    left: -260%;
+    z-index: -1;
+  }
+}

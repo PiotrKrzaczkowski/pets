@@ -1,0 +1,100 @@
+.reviews {
+  padding-top: 230px;
+  display: flex;
+  flex-direction: column;
+  .review-title {
+    padding: 0 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: $color-main;
+  }
+  .reviews-wrapper {
+    width: 100%;
+    margin-top: 30px;
+    .review-btn {
+      display: none;
+    }
+    .reviews-container {
+      width: 100%;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      .review {
+        width: 80%;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background: linear-gradient(
+          45deg,
+          rgb(100, 100, 197),
+          rgb(98, 98, 248)
+        );
+        border-radius: 20px;
+        box-shadow: $btn-color;
+        position: relative;
+        .review-img {
+          width: 50px;
+          border-radius: 50%;
+        }
+        .review-name {
+          margin-top: 10px;
+          font-weight: 300;
+          color: darken($font-color-light, 5%);
+          font-size: 1rem;
+        }
+        .review-desc {
+          width: 80%;
+          margin-top: 20px;
+          font-size: 0.7rem;
+          text-align: center;
+          color: darken($font-color-light, 15%);
+        }
+      }
+      .review-sub {
+        position: absolute;
+        top: 0;
+        left: -75%;
+        width: 80%;
+        margin-top: 20px;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background: linear-gradient(
+          45deg,
+          rgb(197, 100, 100),
+          rgb(248, 98, 98)
+        );
+        border-radius: 20px;
+        box-shadow: $btn-color;
+        z-index: -1;
+        &:nth-child(2) {
+          left: 95%;
+        }
+        .review-img {
+          width: 50px;
+          border-radius: 50%;
+        }
+        .review-name {
+          margin-top: 10px;
+          font-weight: 300;
+          color: darken($font-color-light, 5%);
+          font-size: 1rem;
+        }
+        .review-desc {
+          width: 80%;
+          margin-top: 20px;
+          font-size: 0.7rem;
+          text-align: center;
+          color: darken($font-color-light, 15%);
+        }
+      }
+    }
+  }
+}

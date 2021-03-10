@@ -1,0 +1,79 @@
+.footer {
+  width: 100%;
+  background-color: $color-main;
+  .lists-wrapper {
+    padding: 40px 20px;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .footer-section {
+      display: flex;
+      flex-direction: column;
+      .footer-title {
+        margin: 15px 0;
+        font-weight: 600;
+        color: $color-fetch;
+      }
+      .footer-desc {
+        width: 65%;
+        line-height: 1.5rem;
+        font-size: 0.7rem;
+        color: #fff;
+      }
+
+      .footer-inputs {
+        width: 100%;
+        margin-top: 20px;
+        position: relative;
+        .footer-input {
+          @include fetch-input;
+        }
+        .footer-btn {
+          @include fetch-btn;
+        }
+      }
+      .footer-input {
+        @include fetch-input;
+      }
+      .footer-btn {
+        position: absolute;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+      }
+
+      .footer-list-flex {
+        width: 280px;
+        display: flex;
+        justify-content: space-between;
+        // background-color: red;
+      }
+
+      .footer-list {
+        .footer-li {
+          line-height: 1.5rem;
+          font-size: 0.7rem;
+          color: #fff;
+        }
+      }
+    }
+    .footer-media-icons {
+      width: 100%;
+      margin: 30px 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // background-color: red;
+      & i {
+        padding: 15px;
+        border-radius: 50%;
+        color: lighten($font-color-dark, 50%);
+        box-shadow: $box-shadow;
+        font-size: 1.5rem;
+        background-color: #fff;
+      }
+    }
+  }
+}
