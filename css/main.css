@@ -72,9 +72,16 @@ ul {
   }
 }
 
-@media (min-width: 414px) and (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) {
+@media only screen and (min-width: 414px) and (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) {
   .header {
     background-size: 1500px;
+    background-position: 35% -290px;
+  }
+}
+
+@media only screen and (min-width: 414px) and (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) and (min-width: 1368px) {
+  .header {
+    background-size: 1700px;
     background-position: 35% -290px;
   }
 }
@@ -139,6 +146,12 @@ ul {
   }
 }
 
+@media only screen and (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) and (min-width: 1368px) {
+  .header .header-items .header-title {
+    margin-top: 70px;
+  }
+}
+
 .header .header-items .header-desc {
   width: 80%;
   margin-top: 10px;
@@ -175,6 +188,13 @@ ul {
   background-color: #4487ff;
   font-family: inherit;
   margin-top: 20px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.header .header-items .header-btn:hover {
+  background-color: #ff6752;
+  cursor: pointer;
 }
 
 @media (min-width: 1024px) {
@@ -226,6 +246,13 @@ ul {
     height: 400px;
     bottom: 95px;
     right: 120px;
+  }
+}
+
+@media only screen and (min-width: 414px) and (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) and (min-width: 1368px) {
+  .header .header-dog {
+    height: 550px;
+    right: 150px;
   }
 }
 
@@ -358,6 +385,8 @@ ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-transition: 0.6s ease-in-out;
+    transition: 0.6s ease-in-out;
     z-index: 9999;
   }
 }
@@ -400,6 +429,12 @@ ul {
   font-size: 0.9rem;
   font-weight: 300;
   color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav-desktop .list .li .link:hover {
+  color: #ffe530;
 }
 
 .services {
@@ -435,6 +470,12 @@ ul {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1100px) and (min-width: 1368px) {
+  .services {
+    margin-top: -100px;
   }
 }
 
@@ -750,6 +791,13 @@ ul {
   }
 }
 
+@media only screen and (min-width: 360px) and (min-width: 414px) and (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) and (min-width: 1368px) {
+  .services .service-img {
+    left: -35%;
+    top: -35%;
+  }
+}
+
 .reviews {
   padding-top: 230px;
   display: -webkit-box;
@@ -779,6 +827,12 @@ ul {
 @media (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) {
   .reviews {
     margin-top: 330px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1024px) and (min-width: 1100px) and (min-width: 1368px) {
+  .reviews {
+    margin-top: 360px;
   }
 }
 
@@ -832,6 +886,7 @@ ul {
     right: 25px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+    cursor: pointer;
   }
 }
 
@@ -863,6 +918,7 @@ ul {
     left: 25px;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+    cursor: pointer;
   }
 }
 
@@ -922,6 +978,12 @@ ul {
 @media (min-width: 768px) and (min-width: 1100px) {
   .reviews .reviews-wrapper .reviews-container .review {
     width: 40%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1100px) and (min-width: 1368px) {
+  .reviews .reviews-wrapper .reviews-container .review {
+    width: 35%;
   }
 }
 
@@ -987,6 +1049,13 @@ ul {
   }
 }
 
+@media only screen and (min-width: 768px) and (min-width: 1100px) and (min-width: 1368px) {
+  .reviews .reviews-wrapper .reviews-container .review-sub {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
 .reviews .reviews-wrapper .reviews-container .review-sub:nth-child(2) {
   left: 95%;
 }
@@ -1003,6 +1072,14 @@ ul {
     left: 680px;
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
+  }
+}
+
+@media only screen and (min-width: 768px) and (min-width: 1100px) and (min-width: 1368px) {
+  .reviews .reviews-wrapper .reviews-container .review-sub:nth-child(2) {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    left: 56%;
   }
 }
 
@@ -1878,5 +1955,12 @@ ul {
           box-shadow: 0 3px 6px #2c1dad29;
   font-size: 1.5rem;
   background-color: #fff;
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
+}
+
+.footer .lists-wrapper .footer-media-icons i:hover {
+  cursor: pointer;
+  background-color: #ff6752;
 }
 /*# sourceMappingURL=main.css.map */

@@ -2,6 +2,7 @@
 const menuIcon = document.querySelector(".hamburger-menu");
 const mobileList = document.querySelector(".mobile-list ");
 const navMobile = document.querySelector(".nav-mobile");
+const navDesktop = document.querySelector(".nav-desktop");
 
 menuIcon.addEventListener("click", () => {
   menuIcon.classList.toggle("hamburger-menu--change");
@@ -11,7 +12,8 @@ menuIcon.addEventListener("click", () => {
 window.addEventListener("scroll", (e) => {
   if (window.scrollY >= 20) {
     navMobile.classList.add("nav-mobile--bcg-col");
+    navDesktop.classList.add("nav-mobile--bcg-col");
   } else {
-    navMobile.classList.remove("nav-mobile--bcg-col");
+    navDesktop.classList.remove("nav-mobile--bcg-col");
   }
 });

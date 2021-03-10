@@ -133,6 +133,11 @@
         box-shadow: $box-shadow;
         font-size: 1.5rem;
         background-color: #fff;
+        transition: 0.3s all ease-in;
+        &:hover {
+          cursor: pointer;
+          background-color: $color-main;
+        }
       }
     }
   }
