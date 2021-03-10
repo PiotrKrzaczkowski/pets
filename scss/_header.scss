@@ -5,26 +5,83 @@
   background-repeat: no-repeat;
   background-size: 1500px;
   background-position: 35% 150%;
+  @media (min-height: 812px) and (min-width: 375px) {
+    background-position: 35% 1500%;
+  }
+  @media (min-width: 414px) {
+    background-position: 35% 210%;
+    @media (min-width: 768px) {
+      background-position: 35% -50%;
+      @media (min-width: 1024px) {
+        background-size: 2500px;
+        background-position: 35% -320px;
+        @media (min-width: 1100px) {
+          background-size: 1500px;
+          background-position: 35% -290px;
+        }
+      }
+    }
+  }
   .header-items {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 120px 20px 0 20px;
+    @media (min-width: 768px) {
+      padding: 160px 20px 0 40px;
+      @media (min-width: 1024px) {
+        padding: 220px 20px 0 80px;
+        @media (min-width: 1100px) {
+          padding: 130px 20px 0 80px;
+        }
+      }
+    }
+
     .header-title {
       color: $font-color-light;
       font-weight: 500;
       letter-spacing: 0.5px;
+      @media (min-width: 768px) {
+        margin-top: 50px;
+        font-size: 2.8rem;
+
+        @media (min-width: 1024px) {
+          font-size: 3.2rem;
+          @media (min-width: 1100px) {
+            margin-top: 30px;
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+          }
+        }
+      }
     }
     .header-desc {
       width: 80%;
       margin-top: 10px;
       font-size: 0.8rem;
       color: darken($font-color-light, 10%);
+      @media (min-width: 768px) {
+        width: 60%;
+        font-size: 1rem;
+        @media (min-width: 1024px) {
+          font-size: 1.2rem;
+          @media (min-width: 1100px) {
+            font-size: 0.9rem;
+            width: 35%;
+          }
+        }
+      }
     }
     .header-btn {
       @include blue-btn;
       margin-top: 20px;
+      @media (min-width: 1024px) {
+        margin-top: 40px;
+        @media (min-width: 1100px) {
+          margin-top: 20px;
+        }
+      }
     }
   }
   .header-dog {
@@ -32,5 +89,23 @@
     position: absolute;
     bottom: -80px;
     right: 20px;
+    @media (min-height: 812px) and (min-width: 375px) {
+      bottom: -10px;
+    }
+    @media (min-width: 414px) {
+      bottom: -40px;
+      @media (min-width: 768px) {
+        height: 600px;
+        bottom: 55px;
+        @media (min-width: 1024px) {
+          height: 800px;
+          @media (min-width: 1100px) {
+            height: 400px;
+            bottom: 95px;
+            right: 120px;
+          }
+        }
+      }
+    }
   }
 }

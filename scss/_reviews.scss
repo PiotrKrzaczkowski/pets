@@ -2,17 +2,75 @@
   padding-top: 230px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  @media (min-width: 768px) {
+    padding-top: 0px;
+    @media (min-width: 1024px) {
+      margin-top: -300px;
+      @media (min-width: 1100px) {
+        margin-top: 330px;
+      }
+    }
+  }
+
   .review-title {
     padding: 0 10px;
     font-size: 1.5rem;
     text-align: center;
     color: $color-main;
+    @media (min-width: 768px) {
+      padding-top: 0px 15%;
+      margin-top: -50px;
+      width: 50%;
+      @media (min-width: 1100px) {
+        width: 40%;
+      }
+    }
   }
   .reviews-wrapper {
     width: 100%;
     margin-top: 30px;
+    position: relative;
+    .review-btn-right {
+      display: none;
+
+      @media (min-width: 1100px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        background-color: $color-main;
+        position: absolute;
+        top: 50%;
+        right: 25px;
+        transform: translateY(-50%);
+      }
+      & i {
+        font-size: 1.2rem;
+        color: $font-color-light;
+      }
+    }
+
     .review-btn {
       display: none;
+
+      @media (min-width: 1100px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        background-color: $color-main;
+        position: absolute;
+        top: 50%;
+        left: 25px;
+        transform: translateY(-50%);
+      }
+      & i {
+        font-size: 1.2rem;
+        color: $font-color-light;
+      }
     }
     .reviews-container {
       width: 100%;
@@ -37,6 +95,12 @@
         border-radius: 20px;
         box-shadow: $btn-color;
         position: relative;
+        @media (min-width: 768px) {
+          width: 70%;
+          @media (min-width: 1100px) {
+            width: 40%;
+          }
+        }
         .review-img {
           width: 50px;
           border-radius: 50%;
@@ -74,8 +138,24 @@
         border-radius: 20px;
         box-shadow: $btn-color;
         z-index: -1;
+        @media (min-width: 768px) {
+          width: 80%;
+          @media (min-width: 1100px) {
+            width: 40%;
+            left: 50px;
+            transform: scale(0.8);
+          }
+        }
         &:nth-child(2) {
           left: 95%;
+          @media (min-width: 768px) {
+            left: 95%;
+            @media (min-width: 1100px) {
+              width: 40%;
+              left: 680px;
+              transform: scale(0.8);
+            }
+          }
         }
         .review-img {
           width: 50px;
