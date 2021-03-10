@@ -1,5 +1,4 @@
 # pets
 
 Zadanie rekrutacyjne - pets landing page
-
-(live)[https://piotrkrzaczkowski.github.io/pets/]
+[live](https://piotrkrzaczkowski.github.io/pets/)
