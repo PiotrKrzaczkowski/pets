@@ -32,3 +32,16 @@ window.addEventListener("scroll", (e) => {
     });
   });
 });
+
+const headerText =
+  "For over 17 Years, Fetch! Pet Care has been a trusted partner in keeping pets healthy and happy!";
+let i = 0;
+
+function type() {
+  if (i < headerText.length) {
+    document.querySelector(".header-desc").innerHTML += headerText.charAt(i);
+    i++;
+    setTimeout(type, 20);
+  }
+}
+type();
