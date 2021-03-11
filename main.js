@@ -16,4 +16,19 @@ window.addEventListener("scroll", (e) => {
   } else {
     navDesktop.classList.remove("nav-mobile--bcg-col");
   }
+
+  // SHOW EFFECT
+  window.addEventListener("scroll", () => {
+    const revs = document.querySelectorAll(".rev");
+
+    revs.forEach((rev) => {
+      let windowHeight = window.innerHeight;
+      let revTop = rev.getBoundingClientRect().top;
+      const revPoint = 150;
+
+      if (revTop < windowHeight - revPoint) {
+        rev.classList.add("active");
+      } else rev.classList.remove("active");
+    });
+  });
 });

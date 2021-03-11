@@ -38,6 +38,21 @@ ul {
   list-style: none;
 }
 
+.rev {
+  position: relative;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.rev.active {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+
 .header {
   width: 100%;
   min-height: 100vh;
